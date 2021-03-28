@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage" >
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="color-scheme" content="light dark">
+	<title>Syntax Highlighterをマイナーチェンジした。 &#8211; Sakurai Rono PEN</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//c0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Sakurai Rono PEN &raquo; フィード" href="https://www.studiomic.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sakurai Rono PEN &raquo; コメントフィード" href="https://www.studiomic.net/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://c0.wp.com/c/5.7/wp-includes/css/dist/block-library/style.min.css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://c0.wp.com/c/5.7/wp-includes/css/dist/block-library/theme.min.css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.studiomic.net/wp/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4' media='all' />
+<link rel='stylesheet' id='twenty-twenty-one-style-css'  href='https://www.studiomic.net/wp/wp-content/themes/Colorist-One/style.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='twenty-twenty-one-print-style-css'  href='https://www.studiomic.net/wp/wp-content/themes/Colorist-One/assets/css/print.css?ver=1.0.0' media='print' />
+<link rel='stylesheet' id='social-logos-css'  href='https://c0.wp.com/p/jetpack/9.5/_inc/social-logos/social-logos.min.css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://c0.wp.com/p/jetpack/9.5/css/jetpack.css' media='all' />
+<link rel="https://api.w.org/" href="https://www.studiomic.net/wp-json/" /><link rel="alternate" type="application/json" href="https://www.studiomic.net/wp-json/wp/v2/posts/1254" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.studiomic.net/wp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.studiomic.net/wp/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.7" />
+<link rel="canonical" href="https://www.studiomic.net/syntax-highlighter%e3%82%92%e3%83%9e%e3%82%a4%e3%83%8a%e3%83%bc%e3%83%81%e3%82%a7%e3%83%b3%e3%82%b8%e3%81%97%e3%81%9f%e3%80%82/" />
+<link rel="alternate" type="application/json+oembed" href="https://www.studiomic.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.studiomic.net%2Fsyntax-highlighter%25e3%2582%2592%25e3%2583%259e%25e3%2582%25a4%25e3%2583%258a%25e3%2583%25bc%25e3%2583%2581%25e3%2582%25a7%25e3%2583%25b3%25e3%2582%25b8%25e3%2581%2597%25e3%2581%259f%25e3%2580%2582%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.studiomic.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.studiomic.net%2Fsyntax-highlighter%25e3%2582%2592%25e3%2583%259e%25e3%2582%25a4%25e3%2583%258a%25e3%2583%25bc%25e3%2583%2581%25e3%2582%25a7%25e3%2583%25b3%25e3%2582%25b8%25e3%2581%2597%25e3%2581%259f%25e3%2580%2582%2F&#038;format=xml" />
+<style type='text/css'>img#wpstats{display:none}</style><style id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Syntax Highlighterをマイナーチェンジした。" />
+<meta property="og:url" content="https://www.studiomic.net/syntax-highlighter%e3%82%92%e3%83%9e%e3%82%a4%e3%83%8a%e3%83%bc%e3%83%81%e3%82%a7%e3%83%b3%e3%82%b8%e3%81%97%e3%81%9f%e3%80%82/" />
+<meta property="og:description" content="WordPressのテーマを変更していちばん影響を受けたのが自家製のSyntax Highlighter尽くし&hellip;" />
+<meta property="article:published_time" content="2021-03-05T17:08:13+00:00" />
+<meta property="article:modified_time" content="2021-03-08T07:28:45+00:00" />
+<meta property="og:site_name" content="Sakurai Rono PEN" />
+<meta property="og:image" content="https://www.studiomic.net/wp/wp-content/uploads/photo-07-scaled.jpg" />
+<meta property="og:image:width" content="2560" />
+<meta property="og:image:height" content="1920" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="twitter:text:title" content="Syntax Highlighterをマイナーチェンジした。" />
+<meta name="twitter:image" content="https://www.studiomic.net/wp/wp-content/uploads/photo-07-scaled.jpg?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="icon" href="https://www.studiomic.net/wp/wp-content/uploads/cropped-icon-2-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.studiomic.net/wp/wp-content/uploads/cropped-icon-2-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.studiomic.net/wp/wp-content/uploads/cropped-icon-2-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.studiomic.net/wp/wp-content/uploads/cropped-icon-2-270x270.png" />
+<script data-ampdevmode type="text/javascript">
+/* <![CDATA[ */
+	var wpNotesIsJetpackClient = true;
+	var wpNotesIsJetpackClientV2 = true;
+/* ]]> */
+</script>
+	<!-- jquery & iScroll -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+	<!-- drawer.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+JP&family=Noto+Serif&display=swap" rel="stylesheet">
+
+	<!-- END.header -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/ocean.min.css"/>
+	<link rel="stylesheet" href="https://studiomic.net/css/site-style.css">
+	<link rel="stylesheet" href="https://studiomic.net/css/style-blog.css">
+</head>
+
+<body class="drawer drawer--top">
+	<a class="skip-link screen-reader-text" href="#content">コンテンツへスキップ</a>
+	<header role="banner">
+	<button type="button" class="drawer-toggle drawer-hamburger">
+		<span class="sr-only">toggle navigation</span>
+		<span class="drawer-hamburger-icon"></span>
+	</button>
+	<nav class="drawer-nav" role="navigation" aria-label="main-navigation">
+		<ul class="drawer-menu">
+			<li><a href="/blog">Blog</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#work">work</a></li>
+			<li><a href="#information">information</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+	<section class="thin-dark-headline">
+		<article class="halffit">
+			<div id="particles">
+				<section class="brand">
+					<a href="/">
+						<h1><img src="/logo/logo.png" alt="StudioMic"></h1>
+						<h2>Sakurai Rono PEN</h2>
+					</a>
+				</section>
+	      <section class="visible-nav">
+				<nav role="navigation" aria-label="page-navigation">
+					 <ul class="nav-row">
+						 <li><a href="/blog">Blog</a></li>
+						 <li><a href="#about">About</a></li>
+						 <li><a href="#work">work</a></li>
+						 <li><a href="#information">information</a></li>
+						 <li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+      </section>
+    </div>
+	</article>
+</section>
+<main class="Blog">
+<section class="singular">
+	<article id="post-1254">
+		<header class="entry-header alignwide">
+			<h1 class="entry-title">Syntax Highlighterをマイナーチェンジした。</h1>
+						</header>
+		<div class="entry-content">
+
+<p>WordPressのテーマを変更していちばん影響を受けたのが自家製のSyntax Highlighter尽くしだった「<a href="https://www.studiomic.net/syntax-highlighter/" data-type="post" data-id="193">Syntax Highlighterを思いっきり変更してみた。</a>」ページ。</p>
+
+
+
+<p>&lt;pre&gt;タグで書いているほうはさほどでもなかったが、<br>&lt;input&gt;タイプのほうが無惨だったので、投稿ページをローカルに保存して睨めっこしたり、今のテーマと見比べたりと解決策を模索。</p>
+
+
+
+<p> ついでに「<a href="https://www.studiomic.net/pre-line-numbers/" data-type="post" data-id="451">Pre CodeブロックにCSS擬似要素で行番号をつける方法</a>」でやりかけた行番号をつけるCSSもリベンジ作成。</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<div class="wp-block-group chambre"><div class="wp-block-group__inner-container">
+<h3>目次</h3>
+
+
+
+<ul><li><a href="#in1" data-type="internal" data-id="#in1">ブロックエディタの「追加 CSS クラス」を使う</a></li><li><a href="#in2">その名もナンプレ</a></li><li><a href="#in3" data-type="internal" data-id="#in3">Gutenbergとhighlight.jsの相性良しめ</a></li></ul>
+</div></div>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p>不思議だったのが、いろんなページで黒い枠線が生きているのと、すっかり表示がおかしいものとが混在していることだったが、この原因は単純に「時代」</p>
+
+
+
+<p>かなり古い記事はまだブロックエディタ登場前で、自分はクラシックエディタでも「テキストモード」を主に使っていたが、テキストモードにも&lt;pre&gt;タグを挿入するボタンはあって、これを押下で入るタグが&lt;pre&gt;・wp-block-preformatted・classつきだったらしい。</p>
+
+
+
+<p>このclassスタイルを現行バージョン「Twenty Twenty One」のCSSでもフォローしているので&lt;pre&gt;タグだけで書かれたものは過去と同じ表示が保たれていた。</p>
+
+
+
+<pre class="wp-block-preformatted">「Twenty Seventeen」の頃に&lt;pre&gt;タグで書いたものはこんな感じ。
+</pre>
+
+
+
+<p>「Twenty Twenty One」ではclass-nameが 「wp-block-code」 になっているが似たようなスタイル。ただし　&lt;pre class=&#8221;wp-block-code&#8221;&gt;&lt;code&gt;　と続けて入力される。</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p>いちばん簡単で近道な解消策は、自分が使ってきたclassのスタイルで　.wp-block-code　を上書きしてしまう方法だが、ブロックエディタ「Gutenberg」ならではの利用法を思いついた。</p>
+
+
+
+<p>CSSセレクタでの解決。and/orのAであり・かつBであるならば法</p>
+
+
+
+<p>.wp-block-code：classはそのまま残しつつ、.snippet：classと2つ名を持った時にはMyStyleになるように調整。<br></p>
+
+
+
+<pre class="wp-block-code snippet css"><code>.wp-block-code {
+	border-color: var(--global--color-border);　//変数要素は#28303d
+	border-radius: 0;
+	border-style: solid;
+	border-width: 0.1rem;
+	padding: var(--global--spacing-unit);　//変数要素は20px
+}
+
+.wp-block-code code {
+	color: var(--global--color-primary);　//変数要素は#28303d
+	font-size: var(--global--font-size-xs); 1rem; //変数要素は16px
+	white-space: pre;
+	overflow-x: auto;
+	display: block;
+}
+
+この指定は放置なので何も上書きしないまま
+
+pre.wp-block-code.snippet {
+	border-color: transparent;
+	padding: 0;
+}
+
+&lt;pre class="wp-block-code snippet"&gt;&lt;code&gt;　と、
+snippet：classが並んだときだけ、線色は透明・パディングはゼロリセット</code></pre>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<h3 class="uline" id="in1">ブロックエディタの「追加 CSS クラス」を使う</h3>
+
+
+
+<div class="wp-block-media-text is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img loading="lazy" width="280" height="590" src="https://www.studiomic.net/wp/wp-content/uploads/plusClass.png" alt="" class="wp-image-1362 size-full" srcset="https://www.studiomic.net/wp/wp-content/uploads/plusClass.png 280w, https://www.studiomic.net/wp/wp-content/uploads/plusClass-237x500.png 237w, https://www.studiomic.net/wp/wp-content/uploads/plusClass-142x300.png 142w" sizes="(max-width: 280px) 100vw, 280px" /></figure><div class="wp-block-media-text__content">
+<p>ブロックエディタの設定画面が表示されていると最下部に「高度な設定」があり、HTMLアンカーと追加クラスを指定できる。</p>
+
+
+
+<p>半角スペースでいくつでも指定可能なら「<a href="https://www.studiomic.net/pre-line-numbers/" data-type="post" data-id="451">Pre CodeブロックにCSS擬似要素で行番号をつける方法</a>」で方法は思いついていたが、毎度毎度、短いコードにまで行番号が出るのはうざいよね・・と使えなかった手法も使える。</p>
+
+
+
+<hr class="wp-block-separator is-style-default"/>
+
+
+
+<p class="small">そして便利なアンカー補助機能の説明が今読むと素晴らしいわ。<br>id を付加することを、きちんと固有のアドレス＝位置情報・番地であると明言してるのね。<br>勉強になりますっ</p>
+</div></div>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<h3 class="uline" id="in2">その名もナンプレ</h3>
+
+
+
+<p>だってまぁnumberもpreもあまりに頻出しそうで。<br>行番号というならline numberだったかと気づいても遅い</p>
+
+
+
+<p>これ自分でもある意味「傑作」だと思う（笑）<br>擬似要素に　content: counter;　を使うでもなく、どこまでもアナログで</p>
+
+
+
+<p>誰か長〜いコードを載せるまともなエンジニアさん使ってくれないかしらん。<br>この見てくれの中ではいちばん軽いと思うのよ<br>使ってくれるなら、アナログな配列をわたくしが100でも200でも千と千尋でも書くわよっ<br>（いや。まともなエンジニアなら自分でさっさとインクリメントしてくれるからw）</p>
+
+
+
+<p>ところでご本家の方が、いつのまにか行番号を出さないタイプに変わってたな・・とこの作業しながら気づいたんですが、ページによりけりなんですね。あるページにはあった。<br><a rel="noreferrer noopener" href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/var" data-type="URL" data-id="https://developer.mozilla.org/ja/docs/Web/HTML/Element/var" target="_blank">&lt;var&gt;ページ</a> にはあって<br><a rel="noreferrer noopener" href="https://developer.mozilla.org/ja/docs/Web/CSS/counter-reset" data-type="URL" data-id="https://developer.mozilla.org/ja/docs/Web/CSS/counter-reset" target="_blank">counter-reset</a> にはなかった<br></p>
+
+
+
+<pre class="wp-block-code snippet numpre css"><code>.numpre {
+	code {
+		position: relative;
+		padding-left: 5rem;
+		&amp;::before {
+			position: absolute;
+			display: block;
+			max-height: 100%;
+			width: 3rem;
+			text-align: right;
+			padding-right: 1rem;
+			border-right: 1px solid rgba($col-Fa,.4);
+			content: "1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A 51\A 52\A 53\A 54\A 55\A 56\A 57\A 58\A 59\A 60\A ";
+			color: rgba($col-Fa,.4);
+			left: .8rem;
+			top: .5rem;
+			bottom: 1rem;
+			overflow: hidden;
+			line-height: 1.6;
+			font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;
+			font-size: 1.2rem;
+			z-index: 0;
+		}
+	}
+}</code></pre>
+
+
+
+<p>たいした事はやってないけど、ここで素晴らしいのはRoot em の remでサイズ指定はフォントを使うものと相性良くて便利すぎる。<br>これをpx単位で見映え調整してたら工数のムダでやってられないと思う。<br>物事は相対的に！（ここ大事すぎて授業じゃ出ません<br></p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<h3 class="uline" id="in3">Gutenbergとhighlight.jsの相性良しめ</h3>
+
+
+
+<p>あとは「<a rel="noreferrer noopener" href="https://highlightjs.org/" data-type="URL" data-id="https://highlightjs.org/" target="_blank">highlight.js</a>」と「Gutenberg」の相性の良さ。<br><br>highlight.jsで言語のカラースキームを指定するには<br>&lt;pre&gt;&lt;code&gt;&lt;span=&#8221;languageType&#8221;&gt;<br>&lt;pre&gt;&lt;span=&#8221;languageType&#8221;&gt;　とspanタグで書く習慣でいましたが・・<br>&lt;pre=&#8221;languageType&#8221;&gt;でも反映されるんでした。</p>
+
+
+
+<p>というわけで今回マイナーチェンジしたスタイル追加でアウトプットできる表示は3タイプ<br></p>
+
+
+
+<pre class="wp-block-code snippet"><code>WordPressテーマデフォルトは
+&lt;pre class="wp-block-code"&gt;&lt;code&gt;
+
+clipboardへコピーする自家製スタイルへ戻すには
+&lt;pre class="wp-block-code snippet"&gt;&lt;code&gt;
+
+行番号つきにする場合は.numpreスタイルを追加
+&lt;pre class="wp-block-code snippet numpre"&gt;&lt;code&gt;
+
+highlight.js の言語別syntaxカラースキームを生かすには
+&lt;pre class="wp-block-code snippet languageType"&gt;&lt;code&gt;</code></pre>
+
+
+
+<p>ただし「html」だけは追加クラスとして崩れた。<br>・・・自家製ではエスケープ文字をそのまま使いたい場合に&lt;span class=&#8221;html&#8221;&gt;を指定名にしていたのが敗因。こういうclass名つけちゃダメだよなー。<br>しかも言語指定するhighlight.jsで使った自分が悪い。ごめんなさいオレ。後でなおすよ。</p>
+
+
+
+<p>しかしHTMLをコピペしてみると、普通にカラースキームが充てられている状態。<br>PHPほかいくつか試して問題なく切り替わったし、その言語の構文とわかるコードならもともと自動で充てられる仕様らしかった。</p>
+
+
+
+<pre class="wp-block-code snippet"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ja" itemscope itemtype="http://schema.org/WebPage" &gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8" /&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+	&lt;meta name="color-scheme" content="light dark"&gt;
+	&lt;title&gt;Syntax Highlighterをマイナーチェンジした。 &amp;#8211; Sakurai Rono PEN&lt;/title&gt;
+	&lt;link rel='dns-prefetch' href='//s.w.org' /&gt;
+	&lt;link rel='dns-prefetch' href='//c0.wp.com' /&gt;</code></pre>
+
+
+
+<p>とりあえず上の「ナンプレ」の場合は「追加 CSS クラス」に「css」を足して色が変わったものの、あ。と気づいて「sass」と「scss」を試したら元の色だった。自動認識らしい。</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p>さて、マイナーチェンジしてしまったので過去版は画像で</p>
+
+
+
+<figure class="wp-block-image size-large is-style-default"><img loading="lazy" width="800" height="742" src="https://www.studiomic.net/wp/wp-content/uploads/syntax-800x742.png" alt="" class="wp-image-1571" srcset="https://www.studiomic.net/wp/wp-content/uploads/syntax-800x742.png 800w, https://www.studiomic.net/wp/wp-content/uploads/syntax-500x464.png 500w, https://www.studiomic.net/wp/wp-content/uploads/syntax-300x278.png 300w, https://www.studiomic.net/wp/wp-content/uploads/syntax-768x713.png 768w, https://www.studiomic.net/wp/wp-content/uploads/syntax.png 970w" sizes="(max-width: 800px) 100vw, 800px" /></figure>
+
+
+
+<p>カラースキームをzenburnからoceanに変更し<br>highlight.js<br>clipboard.js<br>ともに最新バージョンへ差し替え。<br>クリップボードへコピーしたよ！のツールチップは青青とさせました。</p>
+
+
+
+<pre class="wp-block-code snippet"><code>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/ocean.min.css"/&gt;
+
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"&gt;&lt;/script&gt;</code></pre>
+
+
+
+<p>「<a href="https://www.studiomic.net/syntax-highlighter/" data-type="post" data-id="193">Syntax Highlighterを思いっきり変更してみた。</a>」にあるinputタイプのものは一応直してはみたものの、ブロックエディタにinput[text]をサクッと挿入する機能がない以上、カスタムHTMLで手書きするしかなく、効率悪くて使わないだろうなぁ</p>
+
+
+
+<form class="cpbtnw">
+<input id="foo1" type="text" value="https://clipboardjs.com/">
+<button class="btn" type="button" data-input-clipboard="" data-clipboard-target="#foo1">
+<img class="clippy" src="/svg/clippy.svg" alt="Copy to clipboard" width="13"></button>
+</form>
+
+
+
+<p>頻繁に使うならショートコードにしたほうが良いようなものだし。</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">共有:</h3><div class="sd-content"><ul><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon" href="https://www.studiomic.net/syntax-highlighter%e3%82%92%e3%83%9e%e3%82%a4%e3%83%8a%e3%83%bc%e3%83%81%e3%82%a7%e3%83%b3%e3%82%b8%e3%81%97%e3%81%9f%e3%80%82/?share=pocket" target="_blank" title="クリックして Pocket でシェア"><span>Pocket</span></a></li><li class="share-tumblr"><a rel="nofollow noopener noreferrer" data-shared="" class="share-tumblr sd-button share-icon" href="https://www.studiomic.net/syntax-highlighter%e3%82%92%e3%83%9e%e3%82%a4%e3%83%8a%e3%83%bc%e3%83%81%e3%82%a7%e3%83%b3%e3%82%b8%e3%81%97%e3%81%9f%e3%80%82/?share=tumblr" target="_blank" title="クリックして Tumblr で共有"><span>Tumblr</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-1254" class="share-twitter sd-button share-icon" href="https://www.studiomic.net/syntax-highlighter%e3%82%92%e3%83%9e%e3%82%a4%e3%83%8a%e3%83%bc%e3%83%81%e3%82%a7%e3%83%b3%e3%82%b8%e3%81%97%e3%81%9f%e3%80%82/?share=twitter" target="_blank" title="クリックして Twitter で共有"><span>Twitter</span></a></li><li class="share-end"></li></ul><p class="share-customize-link"><a href="https://jetpack.com/redirect/?source=calypso-marketing-sharing-buttons&#038;site=www.studiomic.net" target="_blank" rel="noopener noreferrer">ボタンをカスタマイズする</a></p></div></div></div>		</div>
+		<footer class="entry-footer default-max-width">
+			<span class="posted-on"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 14h-7v-8h2v6h5v2z"/></svg><time class="entry-date published updated" datetime="2021-03-06T02:08:13+09:00">2021/3/6</time></span><span class="edit-link"><a class="post-edit-link" href="https://www.studiomic.net/wp/wp-admin/post.php?post=1254&#038;action=edit">編集 <span class="screen-reader-text">Syntax Highlighterをマイナーチェンジした。</span></a></span><span class="cat-links"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 32"><path class="path1" d="M33.554 17q0 0.554-0.554 1.179l-6 7.071q-0.768 0.911-2.152 1.545t-2.563 0.634h-19.429q-0.607 0-1.080-0.232t-0.473-0.768q0-0.554 0.554-1.179l6-7.071q0.768-0.911 2.152-1.545t2.563-0.634h19.429q0.607 0 1.080 0.232t0.473 0.768zM27.429 10.857v2.857h-14.857q-1.679 0-3.518 0.848t-2.929 2.134l-6.107 7.179q0-0.071-0.009-0.223t-0.009-0.223v-17.143q0-1.643 1.179-2.821t2.821-1.179h5.714q1.643 0 2.821 1.179t1.179 2.821v0.571h9.714q1.643 0 2.821 1.179t1.179 2.821z"></path></svg><a href="https://www.studiomic.net/category/javascript/" rel="category tag">javascript</a> </span><span class="tags-links"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.605 0h-10.605v10.609l13.391 13.391 10.609-10.604-13.395-13.396zm-4.191 6.414c-.781.781-2.046.781-2.829.001-.781-.783-.781-2.048 0-2.829.782-.782 2.048-.781 2.829-.001.782.782.781 2.047 0 2.829z"/></svg><a href="https://www.studiomic.net/tag/clipboard-js/" rel="tag">clipboard.js</a> , <a href="https://www.studiomic.net/tag/highlight-js/" rel="tag">highlight.js</a> , <a href="https://www.studiomic.net/tag/primer-css/" rel="tag">Primer.css</a> , <a href="https://www.studiomic.net/tag/syntax-highlighter/" rel="tag">Syntax Highlighter</a></span>		</footer>
+								</article>
+</section>
+
+	<nav class="navigation post-navigation" role="navigation" aria-label="投稿">
+		<h2 class="screen-reader-text">投稿ナビゲーション</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://www.studiomic.net/entries%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e8%bf%bd%e5%8a%a0/" rel="prev"><p class="meta-nav"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 13v-2H8l4-4-1-2-7 7 7 7 1-2-4-4z" fill="currentColor"/></svg>PREV</p><p class="post-title">Entriesページを追加</p></a></div></div>
+	</nav>	</main>
+
+	<aside class="widget-area">
+		<section id="search-2" class="widget widget_search"><form role="search"  method="get" class="search-form" action="https://www.studiomic.net/">
+	<label for="search-form-1">検索&hellip;</label>
+	<input type="search" id="search-form-1" class="search-field" value="" name="s" />
+	<input type="submit" class="search-submit" value="検索" />
+</form>
+</section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Category</h2><nav role="navigation" aria-label="Category">
+			<ul>
+					<li class="cat-item cat-item-27"><a href="https://www.studiomic.net/category/android/">Android</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="https://www.studiomic.net/category/column/">Column</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="https://www.studiomic.net/category/css/">CSS</a>
+</li>
+	<li class="cat-item cat-item-40"><a href="https://www.studiomic.net/category/individual/information/">information</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://www.studiomic.net/category/javascript/">javascript</a>
+</li>
+	<li class="cat-item cat-item-33"><a href="https://www.studiomic.net/category/mac/">Mac</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://www.studiomic.net/category/private-diary/">Private-Diary</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://www.studiomic.net/category/wordpress/">Wordpress</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="https://www.studiomic.net/category/wordpress/wordpress-thema/">Wordpress-Thema</a>
+</li>
+			</ul>
+
+			</nav></section><section id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2><nav role="navigation" aria-label="Tags"><div class="tagcloud"><a href="https://www.studiomic.net/tag/apache/" class="tag-cloud-link tag-link-23 tag-link-position-1" style="font-size: 8pt;" aria-label="Apache (1個の項目)">Apache</a>
+<a href="https://www.studiomic.net/tag/aquos/" class="tag-cloud-link tag-link-28 tag-link-position-2" style="font-size: 8pt;" aria-label="AQUOS (1個の項目)">AQUOS</a>
+<a href="https://www.studiomic.net/tag/automator-app/" class="tag-cloud-link tag-link-24 tag-link-position-3" style="font-size: 8pt;" aria-label="Automator.app (1個の項目)">Automator.app</a>
+<a href="https://www.studiomic.net/tag/chrome/" class="tag-cloud-link tag-link-21 tag-link-position-4" style="font-size: 8pt;" aria-label="Chrome (1個の項目)">Chrome</a>
+<a href="https://www.studiomic.net/tag/clipboard-js/" class="tag-cloud-link tag-link-15 tag-link-position-5" style="font-size: 13.25pt;" aria-label="clipboard.js (2個の項目)">clipboard.js</a>
+<a href="https://www.studiomic.net/tag/css/" class="tag-cloud-link tag-link-25 tag-link-position-6" style="font-size: 8pt;" aria-label="CSS (1個の項目)">CSS</a>
+<a href="https://www.studiomic.net/tag/gutenberg/" class="tag-cloud-link tag-link-30 tag-link-position-7" style="font-size: 16.75pt;" aria-label="Gutenberg (3個の項目)">Gutenberg</a>
+<a href="https://www.studiomic.net/tag/highlight-js/" class="tag-cloud-link tag-link-14 tag-link-position-8" style="font-size: 13.25pt;" aria-label="highlight.js (2個の項目)">highlight.js</a>
+<a href="https://www.studiomic.net/tag/mac/" class="tag-cloud-link tag-link-22 tag-link-position-9" style="font-size: 13.25pt;" aria-label="Mac (2個の項目)">Mac</a>
+<a href="https://www.studiomic.net/tag/php/" class="tag-cloud-link tag-link-37 tag-link-position-10" style="font-size: 8pt;" aria-label="PHP (1個の項目)">PHP</a>
+<a href="https://www.studiomic.net/tag/primer-css/" class="tag-cloud-link tag-link-16 tag-link-position-11" style="font-size: 13.25pt;" aria-label="Primer.css (2個の項目)">Primer.css</a>
+<a href="https://www.studiomic.net/tag/sharp/" class="tag-cloud-link tag-link-29 tag-link-position-12" style="font-size: 8pt;" aria-label="SHARP (1個の項目)">SHARP</a>
+<a href="https://www.studiomic.net/tag/ssl/" class="tag-cloud-link tag-link-8 tag-link-position-13" style="font-size: 8pt;" aria-label="SSL (1個の項目)">SSL</a>
+<a href="https://www.studiomic.net/tag/svg/" class="tag-cloud-link tag-link-26 tag-link-position-14" style="font-size: 8pt;" aria-label="SVG (1個の項目)">SVG</a>
+<a href="https://www.studiomic.net/tag/syntax-highlighter/" class="tag-cloud-link tag-link-12 tag-link-position-15" style="font-size: 13.25pt;" aria-label="Syntax Highlighter (2個の項目)">Syntax Highlighter</a>
+<a href="https://www.studiomic.net/tag/web-design/" class="tag-cloud-link tag-link-10 tag-link-position-16" style="font-size: 8pt;" aria-label="Web-Design (1個の項目)">Web-Design</a>
+<a href="https://www.studiomic.net/tag/wordpress/" class="tag-cloud-link tag-link-9 tag-link-position-17" style="font-size: 19.666666666667pt;" aria-label="wordpress (4個の項目)">wordpress</a>
+<a href="https://www.studiomic.net/tag/wordpress-thema/" class="tag-cloud-link tag-link-7 tag-link-position-18" style="font-size: 22pt;" aria-label="wordpress-Thema (5個の項目)">wordpress-Thema</a>
+<a href="https://www.studiomic.net/tag/%e3%83%96%e3%83%ad%e3%83%83%e3%82%af%e3%82%a8%e3%83%87%e3%82%a3%e3%82%bf/" class="tag-cloud-link tag-link-31 tag-link-position-19" style="font-size: 16.75pt;" aria-label="ブロックエディタ (3個の項目)">ブロックエディタ</a>
+<a href="https://www.studiomic.net/tag/%e3%83%ad%e3%83%bc%e3%82%ab%e3%83%ab%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc/" class="tag-cloud-link tag-link-36 tag-link-position-20" style="font-size: 8pt;" aria-label="ローカルサーバー (1個の項目)">ローカルサーバー</a>
+<a href="https://www.studiomic.net/tag/%e6%96%ad%e6%8d%a8%e9%9b%a2/" class="tag-cloud-link tag-link-34 tag-link-position-21" style="font-size: 8pt;" aria-label="断捨離 (1個の項目)">断捨離</a>
+<a href="https://www.studiomic.net/tag/%e9%87%8d%e3%81%95%e8%a7%a3%e6%b6%88/" class="tag-cloud-link tag-link-35 tag-link-position-22" style="font-size: 8pt;" aria-label="重さ解消 (1個の項目)">重さ解消</a></div>
+</nav></section>	</aside><!-- .widget-area -->
+
+	<footer class="pageBottom" itemscope itemtype="https://schema.org/WPFooter">
+		<div>
+			<p>SINCE 1999</p>
+			<p id="BackRoot"><a href="#top"><svg class="BackRoot" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 992 771" preserveAspectRatio="xMidYMid meet">
+				<g transform="translate(0.000000,771.000000) scale(0.100000,-0.100000)">
+					<path d="M2725 7673 c-1093 -98 -2170 -807 -2528 -1663 -140 -334 -173 -691 -95 -1009 107 -440 478 -704 1068 -762 69 -7 127 -14 129 -15 2 -2 -50 -55 -115 -117 -600 -575 -993 -1241 -1104 -1867 -28 -157 -38 -468 -21 -621 71 -620 361 -1037 906 -1305 328 -160 667 -234 1207 -264 384 -21 840 26 1263 131 1325 329 2657 1261 3380 2365 43 66 79 120 81 122 1 2 46 -13 101 -33 309 -117 718 -122 1121 -15 683 182 1368 722 1642 1295 168 353 172 662 11 907 -106 162 -279 282 -511 356 -167 53 -270 66 -510 67 -243 0 -358 -14 -575 -70 -304 -78 -652 -239 -883 -409 -34 -25 -65 -46 -70 -45 -4 0 -29 44 -55 97 -158 319 -450 594 -822 777 -555 273 -1318 338 -2097 180 -67 -14 -123 -24 -124 -22 -2 2 13 30 33 62 61 100 140 274 177 387 95 289 95 565 0 790 -150 359 -559 610 -1095 672 -121 14 -401 19 -514 9z"/></g></svg><br>StudioMic</a></p>
+			<p>&copy; 2021 STUDIOMIC</p>
+		</div>
+	</footer>
+	<script>document.body.classList.remove("no-js");</script>	<script>
+	if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
+		document.body.classList.add( 'is-IE' );
+	}
+	</script>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.studiomic.net\/syntax-highlighter%e3%82%92%e3%83%9e%e3%82%a4%e3%83%8a%e3%83%bc%e3%83%81%e3%82%a7%e3%83%b3%e3%82%b8%e3%81%97%e3%81%9f%e3%80%82\/":1254};
+	</script>
+				<link rel='stylesheet' id='dashicons-css'  href='https://c0.wp.com/c/5.7/wp-includes/css/dashicons.min.css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='https://c0.wp.com/c/5.7/wp-includes/css/admin-bar.min.css' media='all' />
+<link rel='stylesheet' id='wpcom-notes-admin-bar-css'  href='https://s0.wp.com/wp-content/mu-plugins/notes/admin-bar-v2.css?ver=9.5-202112' media='all' />
+<link rel='stylesheet' id='noticons-css'  href='https://s0.wp.com/i/noticons/noticons.css?ver=9.5-202112' media='all' />
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+<script id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://www.studiomic.net/wp/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://www.studiomic.net/wp/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://www.studiomic.net/wp/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://www.studiomic.net/wp/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://www.studiomic.net/wp/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://www.studiomic.net/wp/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://www.studiomic.net/wp/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/dist/hooks.min.js' id='wp-hooks-js'></script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/dist/i18n.min.js' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/dist/vendor/lodash.min.js' id='lodash-js'></script>
+<script id='lodash-js-after'>
+window.lodash = _.noConflict();
+</script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/dist/url.min.js' id='wp-url-js'></script>
+<script id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2021-03-10 05:44:03+0000","generator":"GlotPress\/3.0.0-alpha.2","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ja_JP"},"You are probably offline.":["\u73fe\u5728\u30aa\u30d5\u30e9\u30a4\u30f3\u306e\u3088\u3046\u3067\u3059\u3002"],"Media upload failed. If this is a photo or a large image, please scale it down and try again.":["\u30e1\u30c7\u30a3\u30a2\u306e\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u306b\u5931\u6557\u3057\u307e\u3057\u305f\u3002 \u5199\u771f\u307e\u305f\u306f\u5927\u304d\u306a\u753b\u50cf\u306e\u5834\u5408\u306f\u3001\u7e2e\u5c0f\u3057\u3066\u3082\u3046\u4e00\u5ea6\u304a\u8a66\u3057\u304f\u3060\u3055\u3044\u3002"],"The response is not a valid JSON response.":["\u8fd4\u7b54\u304c\u6b63\u3057\u3044 JSON \u30ec\u30b9\u30dd\u30f3\u30b9\u3067\u306f\u3042\u308a\u307e\u305b\u3093\u3002"],"An unknown error occurred.":["\u4e0d\u660e\u306a\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002"]}},"comment":{"reference":"wp-includes\/js\/dist\/api-fetch.js"}} );
+</script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/dist/api-fetch.min.js' id='wp-api-fetch-js'></script>
+<script id='wp-api-fetch-js-after'>
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://www.studiomic.net/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "06715a828a" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://www.studiomic.net/wp/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script id='contact-form-7-js-extra'>
+var wpcf7 = [];
+</script>
+<script src='https://www.studiomic.net/wp/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4' id='contact-form-7-js'></script>
+<script id='twenty-twenty-one-ie11-polyfills-js-after'>
+( Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach ) || document.write( '<script src="https://www.studiomic.net/wp/wp-content/themes/Colorist-One/assets/js/polyfills.js?ver=1.0.0"></scr' + 'ipt>' );
+</script>
+<script src='https://www.studiomic.net/wp/wp-content/themes/Colorist-One/assets/js/responsive-embeds.js?ver=1.0.0' id='twenty-twenty-one-responsive-embeds-script-js'></script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/underscore.min.js' id='underscore-js'></script>
+<script src='https://c0.wp.com/c/5.7/wp-includes/js/backbone.min.js' id='backbone-js'></script>
+<script src='https://s1.wp.com/wp-content/js/mustache.js?ver=9.5-202112' id='mustache-js'></script>
+<script src='https://s1.wp.com/wp-content/mu-plugins/notes/notes-common-v2.js?ver=9.5-202112' id='wpcom-notes-common-js'></script>
+<script src='https://s0.wp.com/wp-content/mu-plugins/notes/admin-bar-v2.js?ver=9.5-202112' id='wpcom-notes-admin-bar-js'></script>
+<script id='sharing-js-js-extra'>
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+</script>
+<script src='https://c0.wp.com/p/jetpack/9.5/_inc/build/sharedaddy/sharing.min.js' id='sharing-js-js'></script>
+<script id='sharing-js-js-after'>
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-pocket' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-pocket' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcompocket', 'menubar=1,resizable=1,width=450,height=450' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-tumblr' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-tumblr' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtumblr', 'menubar=1,resizable=1,width=450,height=450' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-twitter' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-twitter' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+</script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
+	</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.js"></script>
+	<script src="/js/particles.min.js"></script>
+	<script src="/js/index.js"></script>
+	<script src="/js/code.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.drawer').drawer();
+		});
+	</script>
+	<div class="en"></div>
+</body>
+</html>
